@@ -20,59 +20,69 @@
 </head>
 
 <body class="font-manrope">
-    
-    <header class="container mx-auto ">
-        <div class="navbar bg-base-100">
+
+    <header class="container mx-auto lg:px-32">
+        <div class="navbar mb-16 bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a><span class="text-[#FF4240] font-semibold">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a><span class="text-[#FF4240] font-semibold">Home</span></a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl font-extrabold">Hockey’s</a>
+                <a class="btn btn-ghost text-xl font-extrabold">Hockey’s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a><span class="text-[#FF4240] font-semibold">Home</span></a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-                    </ul>
-                 
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><span class="text-[#FF4240] font-semibold">Home</span></a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
             </div>
             <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>  
-              <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+                <button class="btn hidden lg:flex btn-ghost btn-circle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
             </div>
-          </div>
+        </div>
 
-        <div class="carousel w-full rounded-2xl h-[550px]">
+
+        <div class="carousel w-full rounded-2xl ">
             <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class= />
+                <img class="bg-[#D3D3D3]" src="Images/1.png" class= />
                 <div class="absolute flex carousel-item transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn btn-circle text-[white] bg-[#131318]">❮</a>
+                    <a href="#slide2" class="btn btn-circle text-[white] bg-[#131318]">❯</a>
                 </div>
             </div>
             <div id="slide2" class="carousel-item relative w-full">
                 <img src="Images/1.png" class= />
                 <div class="absolute flex carousel-item transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide1" class="btn btn-circle text-[white] bg-[#131318]">❮</a>
+                    <a href="#slide1" class="btn btn-circle text-[white] bg-[#131318]">❯</a>
                 </div>
             </div>
 
         </div>
+
 
     </header>
     <main class="container mx-auto">
@@ -80,29 +90,29 @@
             <h2 class="font-extrabold text-xl lg:text-4xl text-center">Professional Hockeys Club</h2>
             <p class="text-center mb-12">we have experienced coach senior player <br> training ground prayer facility
             </p>
-            <div class="grid grid-cols-1 gap-8 lg:px-36  lg:grid-cols-4">
+            <div class="grid grid-cols-1 gap-8 place-items-center lg:px-36 lg:grid-cols-4">
                 <div>
                     <div class="radial-progress " style="--value:70;" role="progressbar"><span
-                            class="font-extrabold text-3xl">87%</span></div>
-                    <h4 class="font-semibold py-4 text-xl text-[#131318]">Prayer Facility</h4>
+                            class="lg:font-extrabold text-3xl">87%</span></div>
+                    <h4 class="lg:font-semibold py-4 text-xl text-[#131318]">Prayer Facility</h4>
                     <p>we have prayer facility</p>
                 </div>
                 <div>
                     <div class="radial-progress" style="--value:70;" role="progressbar"><span
-                            class="font-extrabold text-3xl">95%</span></div>
-                    <h4 class="font-semibold py-4 text-xl text-[#131318]">Experienced Coach</h4>
+                            class="lg:font-extrabold text-3xl">95%</span></div>
+                    <h4 class="lg:font-semibold py-4 text-xl text-[#131318]">Experienced Coach</h4>
                     <p>we have experienced coach</p>
                 </div>
                 <div>
                     <div class="radial-progress" style="--value:70;" role="progressbar"><span
-                            class="font-extrabold text-3xl">90%</span></div>
+                            class="lg:font-extrabold text-3xl">90%</span></div>
                     <h4 class="font-semibold py-4 text-xl text-[#131318]">Senior Player</h4>
                     <p>we have senior player</p>
                 </div>
                 <div>
                     <div class="radial-progress" style="--value:70;" role="progressbar"><span
-                            class="font-extrabold text-3xl">80%</span></div>
-                    <h4 class="font-semibold py-4 text-xl text-[#131318]">Training Ground</h4>
+                            class="lg:font-extrabold text-3xl">80%</span></div>
+                    <h4 class="lg:font-semibold py-4 text-xl text-[#131318]">Training Ground</h4>
                     <p>we have training ground</p>
                 </div>
             </div>
@@ -115,41 +125,44 @@
                 <div class="hero lg:w-[573px] lg:h-[338px]" style="background-image: url(Images/2.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-neutral-content">
-                      <div class="max-w-md">
-                        <h1 class="mb-5 text-3xl font-extrabold">Junior Program</h1>
-                        <p class="mb-5">we have junior program.where junior player can practice and develop their skill and at future they become a good player</p>
-                        <button class="btn bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
-                      </div>
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-3xl font-extrabold">Junior Program</h1>
+                            <p class="mb-5">we have junior program.where junior player can practice and develop their
+                                skill and at future they become a good player</p>
+                            <button class="btn bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
+                        </div>
                     </div>
-                  </div>
-                  <div class="hero lg:w-[573px] lg:h-[338px]" style="background-image: url(Images/3.png);">
+                </div>
+                <div class="hero lg:w-[573px] lg:h-[338px]" style="background-image: url(Images/3.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content  text-neutral-content">
-                      <div class="max-w-md">
-                        <h1 class="mb-5 text-3xl font-extrabold">Teenager Program</h1>
-                        <p class="mb-5">we have Teenager program.where Teenager player can practice and develop their skill and at future they become a good player</p>
-                        <button class="btn bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
-                      </div>
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-3xl font-extrabold">Teenager Program</h1>
+                            <p class="mb-5">we have Teenager program.where Teenager player can practice and develop
+                                their skill and at future they become a good player</p>
+                            <button class="btn bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="grid grid-cols-1 items-center px-20">
-                <div class="hero lg:w-[1170px] lg:h-[450px]  " style ="background-image: url(Images/4.png);">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 items-center lg:px-20">
+                <div class="hero lg:w-[1170px] lg:h-[450px]  " style="background-image: url(Images/4.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content  text-neutral-content">
-                      <div class="max-w-md">
-                        <h1 class="mb-5 text-3xl font-extrabold">Professional Program</h1>
-                        <p class="mb-5">we have Professional program.where you can practice and and set your Career as a Professional </p>
-                        <button class="btn bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
-                      </div>
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-3xl font-extrabold">Professional Program</h1>
+                            <p class="mb-5">we have Professional program.where you can practice and and set your Career
+                                as a Professional </p>
+                            <button class="btn bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
+                        </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+            </div>
 
 
 
         </section>
-        <section class=" space-y-6">
+        <section class="my-24 space-y-8 ">
             <h2 class="font-semibold text-4xl text-center">Our New Products</h2>
             <p class="text-center ">meet our new Products</p>
             <div class="grid grid-cols-1 place-items-center lg:grid-cols-2  gap-10">
@@ -158,20 +171,20 @@
                     <div class="card-body">
                         <div class="flex space-x-3">
                             <i class="fa-solid fa-star text-orange-500"></i>
-                        <p>5.0</p>
-                        <i class="fa-solid fa-eye"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>200</p>
+                            <p>5.0</p>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
                         </div>
                         <h2 class="font-semibold text-xl">World Cup jersey</h2>
                         <p class="py-4">buy this jersey with discount prices</p>
                         <div class="card-actions ">
-                           <div class="flex space-x-8">
-                            <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                           </div>
+                            <div class="flex space-x-8">
+                                <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,45 +193,45 @@
                     <div class="card-body">
                         <div class="flex space-x-3">
                             <i class="fa-solid fa-star text-orange-500"></i>
-                        <p>5.0</p>
-                        <i class="fa-solid fa-eye"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>200</p>
+                            <p>5.0</p>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
                         </div>
                         <h2 class="font-semibold text-xl">World Cup jersey</h2>
                         <p class="py-4">buy this jersey with discount prices</p>
                         <div class="card-actions ">
-                           <div class="flex space-x-8">
-                            <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                           </div>
-                           </div>
+                            <div class="flex space-x-8">
+                                <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+            </div>
+
             <div class="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
                 <div class="card  w-96 bg-base-100 shadow-xl">
                     <figure><img class="bg-[#D3D3D3]" src="Images/7.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <div class="flex space-x-3">
                             <i class="fa-solid fa-star text-orange-500"></i>
-                        <p>5.0</p>
-                        <i class="fa-solid fa-eye"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>200</p>
+                            <p>5.0</p>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
                         </div>
                         <h2 class="font-semibold text-xl">World Cup jersey</h2>
                         <p class="py-4">buy this jersey with discount prices</p>
                         <div class="card-actions ">
-                           <div class="flex space-x-8">
-                            <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                           </div>
+                            <div class="flex space-x-8">
+                                <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,24 +240,24 @@
                     <div class="card-body">
                         <div class="flex space-x-3">
                             <i class="fa-solid fa-star text-orange-500"></i>
-                        <p>5.0</p>
-                        <i class="fa-solid fa-eye"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>200</p>
+                            <p>5.0</p>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
                         </div>
                         <h2 class="font-semibold text-xl">World Cup jersey</h2>
                         <p class="py-4">buy this jersey with discount prices</p>
                         <div class="card-actions ">
-                           <div class="flex space-x-8">
-                            <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                           </div>
+                            <div class="flex space-x-8">
+                                <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
             <div class="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-10">
@@ -253,20 +266,20 @@
                     <div class="card-body">
                         <div class="flex space-x-3">
                             <i class="fa-solid fa-star text-orange-500"></i>
-                        <p>5.0</p>
-                        <i class="fa-solid fa-eye"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>200</p>
+                            <p>5.0</p>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
                         </div>
                         <h2 class="font-semibold text-xl">World Cup jersey</h2>
                         <p class="py-4">buy this jersey with discount prices</p>
                         <div class="card-actions ">
-                           <div class="flex space-x-8">
-                            <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                           </div>
+                            <div class="flex space-x-8">
+                                <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -275,20 +288,20 @@
                     <div class="card-body">
                         <div class="flex space-x-3">
                             <i class="fa-solid fa-star text-orange-500"></i>
-                        <p>5.0</p>
-                        <i class="fa-solid fa-eye"></i>
-                        <p>20</p>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>200</p>
+                            <p>5.0</p>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
                         </div>
                         <h2 class="font-semibold text-xl">World Cup jersey</h2>
                         <p class="py-4">buy this jersey with discount prices</p>
                         <div class="card-actions ">
-                           <div class="flex space-x-8">
-                            <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                           </div>
+                            <div class="flex space-x-8">
+                                <h2 class="text-[#FF4240] font-semibold text-lg">Price - $22.00</h2>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Delivery Fee : Free</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -299,68 +312,68 @@
             <p class="text-center py-7 text-base font-medium">Question us what u want to know</p>
             <div class=" bg-base-200">
                 <div class="hero-content flex-col gap-10 lg:flex-row">
-                  <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
-                  <div>
-                    <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" checked="checked" /> 
-                        <div class="collapse-title text-[#131318] font-semibold text-xl">
-                          Our Equipment
+                    <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="collapse-title text-[#131318] font-semibold text-xl">
+                                Our Equipment
+                            </div>
+                            <div class="collapse-content">
+                                <p>We have so many Equipment</p>
+                            </div>
                         </div>
-                        <div class="collapse-content"> 
-                          <p>We have so many Equipment</p>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl text-[#131318]  font-semibold">
+                                Hockey Training
+                            </div>
+                            <div class="collapse-content">
+                                <p>yes we have hockey training</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl text-[#131318]  font-semibold">
-                            Hockey Training
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl text-[#131318] font-semibold">
+                                Private Lessons
+                            </div>
+                            <div class="collapse-content">
+                                <p>private lesson is available</p>
+                            </div>
                         </div>
-                        <div class="collapse-content"> 
-                          <p>yes we have hockey training</p>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl text-[#131318] font-semibold">
+                                Ski Touring
+                            </div>
+                            <div class="collapse-content">
+                                <p>yes available</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl text-[#131318] font-semibold">
-                            Private Lessons
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl text-[#131318] font-semibold">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p>yes u can</p>
+                            </div>
                         </div>
-                        <div class="collapse-content"> 
-                          <p>private lesson is available</p>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl text-[#131318] font-semibold">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p>low price</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl text-[#131318] font-semibold">
-                            Ski Touring
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>yes available</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl text-[#131318] font-semibold">
-                            Booking
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>yes u can</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-plus bg-base-200">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl text-[#131318] font-semibold">
-                            Pricings
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>low price</p>
-                        </div>
-                      </div>
-                    
-                
-              </div>
 
-            
-            
+
+                    </div>
+
+
+
 
         </section>
 
